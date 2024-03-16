@@ -18,7 +18,7 @@ npm start      # Start the production server.
 
 To get started with this project, follow these steps:
 
-1. Clone this repository [https://github.com/Code-Theft/Colloquium-website](https://github.com/Code-Theft/Colloquium-webiste)
+1. Clone this repository [https://github.com/Code-Theft/Aralam-Farm-Website.git](https://github.com/Code-Theft/Aralam-Farm-Website.git)
 2. From the root folder, install the dependencies using: `` `npm install` ``
 3. Follow the guidelines provided in this readme.
 
@@ -32,7 +32,7 @@ To get started with this project, follow these steps:
 Here is an overview of the project structure:
 
 ```js
-Colloquium Website
+Aaralam Website
 ├── public/
 │   └── images
 ├── src/

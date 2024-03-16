@@ -7,12 +7,14 @@
  * @author Janajith D
  */
 
+import Footer from "@widgets/Footer";
 import React from "react";
 
 export default function Home() {
   return (
     <>
       <div>Hello</div>
+      <Footer />
     </>
   );
 }
