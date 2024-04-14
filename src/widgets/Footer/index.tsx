@@ -7,7 +7,5 @@
  * @author Janajith D
  */
 
-export const imageAlts = {
-    HOME: "Aaralam Farm"
-}
-
+import Footer from "@widgets/Footer/view";
+export default Footer;
