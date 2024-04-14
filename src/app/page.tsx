@@ -12,7 +12,7 @@ import React from "react";
 export default function Home() {
   return (
     <>
-      <div>Hello Da</div>
+      <div>Aralam Farm</div>
     </>
   );
 }
