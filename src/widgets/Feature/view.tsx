@@ -10,5 +10,5 @@
 import React from "react";
 
 export default function FeatureView() {
-  return <div>view</div>;
+  return <div>Hello Myraa</div>;
 }
