@@ -1,0 +1,124 @@
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: $secondary;
+  z-index: 3;
+
+  .header-top {
+    .navbar {
+      padding: $navbar-padding-y 0;
+
+      @include media-breakpoint-down(md) {
+        border-bottom: 0;
+      }
+
+      .navbar-nav {
+        .nav-item {
+          display: flex;
+          align-items: center;
+
+          @include media-breakpoint-down(md) {
+            margin-top: 0.5rem;
+            margin-left: 0;
+          }
+
+          .btn-outline-light {
+            min-width: 11rem;
+            color: $primary;
+            font-weight: $font-weight-medium;
+            background: $white;
+
+            &:hover {
+              color: $primary;
+
+              [class*='fill-'] {
+                fill: $black;
+              }
+
+              [class*='stroke-'] {
+                path {
+                  stroke: $black;
+                }
+              }
+            }
+
+            &:disabled {
+              background: $gray-200;
+            }
+          }
+
+          &:nth-child(2) {
+            padding-left: 2.5rem;
+
+            .dropdown-menu {
+              min-width: 15rem;
+              margin-top: 0.937rem;
+              border-top-left-radius: 0;
+              border-top-right-radius: 0;
+              border-top: 0;
+
+              .dropdown-item {
+                &:first-child {
+                  border-top-left-radius: 0;
+                  border-top-right-radius: 0;
+                }
+
+                &:last-child {
+                  background: none;
+                  padding: 0.5rem 0;
+                }
+
+                &.logout {
+                  width: 100%;
+                  padding: 0.5rem;
+
+                  &:hover {
+                    color: $danger;
+                    border-radius: $border-radius;
+                    background: $gray-100;
+
+                    [class*='fill-'] {
+                      fill: $danger;
+                    }
+
+                    [class*='stroke-'] {
+                      path {
+                        stroke: $danger;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+
+            .btn {
+              color: $primary;
+              border-color: transparent;
+              background: transparent;
+            }
+          }
+
+          .user-dropdown {
+            display: flex;
+            align-items: center;
+
+            span {
+              text-align: end;
+              font-size: $font-size-lg;
+              font-weight: $font-weight-bold;
+
+              .user-role {
+                display: block;
+                color: $gray-600;
+                font-size: $font-size-base;
+                font-weight: $font-weight-semibold;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

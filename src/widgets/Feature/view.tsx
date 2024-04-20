@@ -8,15 +8,7 @@
  */
 
 import React from "react";
-import Footer from "@widgets/Footer";
-import Feature from "@widgets/Feature";
 
-export default function Home() {
-  return (
-    <>
-      <div>Aralam Farm</div>
-      <Feature />
-      {/* <Footer /> */}
-    </>
-  );
+export default function FeatureView() {
+  return <div>view</div>;
 }

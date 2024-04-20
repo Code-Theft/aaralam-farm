@@ -1,0 +1,209 @@
+.badge {
+  font-size: $font-size-sm;
+  line-height: .5rem;
+  padding: .5rem;
+
+  &.bg-instock {
+    position: relative;
+    color: $black;
+    border: 1px solid rgba(#7BBF9A80, 0.3);
+    background: rgba(#BDF6D780, 0.3);
+    padding: 0.25rem 0.25rem 0.25rem 1rem;
+
+    &::before {
+      position: absolute;
+      top: 5px;
+      left: 0.25rem;
+      content: '';
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: $success;
+    }
+  }
+
+  &.bg-outof-stock {
+    position: relative;
+    color: $black;
+    border: 1px solid rgba($danger, 0.3);
+    background: rgba($danger, 0.3);
+    padding: 0.25rem 0.25rem 0.25rem 1rem;
+
+    &::before {
+      position: absolute;
+      top: 5px;
+      left: 0.25rem;
+      content: '';
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: $danger;
+    }
+  }
+
+  &.bg-failed {
+    color: $black;
+    border: 1px solid rgba($danger, 0.3);
+    background: rgba($danger, 0.3);
+  }
+
+  &.bg-new {
+    color: $black;
+    border: 1px solid rgba(#7BBAFC, 0.3);
+    background: rgba(#D9E9FA, 0.3);
+  }
+
+  &.bg-assigned {
+    color: $black;
+    border: 1px solid rgba(#76AF3D, 0.3);
+    background: rgba(#BDFE7D, 0.3);
+  }
+
+  &.bg-assigned-warehouse {
+    color: $black;
+    border: 1px solid rgba(#76AF3D, 0.3);
+    background: rgba(#87E396, 0.3);
+  }
+
+  &.bg-pending {
+    color: $black;
+    border: 1px solid rgba(#F37746, 0.3);
+    background: rgba(#FFA07A, 0.3);
+  }
+
+  &.bg-accepted {
+    color: $black;
+    border: 1px solid rgba(#00A5E3, 0.3);
+    background: rgba(#00A5E3, 0.3);
+  }
+
+  &.bg-rejected {
+    color: $black;
+    border: 1px solid rgba(#EC0707, 0.3);
+    background: rgba(#FF0404, 0.3);
+  }
+
+  &.bg-picked {
+    color: $black;
+    border: 1px solid rgba(#8D90C7, 0.3);
+    background: rgba(#CED1FC, 0.3);
+  }
+
+  &.bg-shipped {
+    color: $black;
+    border: 1px solid rgba(#2B938F, 0.3);
+    background: rgba(#48D1CC, 0.3);
+  }
+
+  &.bg-delivered {
+    color: $black;
+    border: 1px solid rgba(#059A4F, 0.3);
+    background: rgba(#3AFE9C, 0.3);
+  }
+
+  &.bg-cancelled {
+    color: $white;
+    border: 1px solid #D31616;
+    background: #FD7272;
+  }
+
+  &.bg-returned {
+    color: $black;
+    border: 1px solid rgba(#CDCE57, 0.3);
+    background: rgba(#E6E78A, 0.3);
+  }
+
+  &.bg-return-request {
+    color: $black;
+    border: 1px solid rgba(#DC143C, 0.3);
+    background: rgba(#FF869E, 0.3);
+  }
+
+  &.bg-return-initiated {
+    color: $black;
+    border: 1px solid rgba(#AB7F29, 0.5);
+    background: rgba(#F9C664, 0.5);
+  }
+
+  &.bg-consolidation {
+    color: $black;
+    border: 1px solid rgba(#295DAB, 0.5);
+    background: rgba(#7C99FF, 0.5);
+  }
+
+  &.bg-delivery-retried {
+    color: $black;
+    border: 1px solid rgba(#FF878F, 0.5);
+    background: rgba(#FEDFE1, 0.5);
+  }
+
+  &.bg-warehouse-consolidation {
+    color: $black;
+    border: 1px solid rgba(#049494, 0.5);
+    background: rgba(#00FFFF, 0.5);
+  }
+
+  &.bg-return-in-progress {
+    color: $black;
+    border: 1px solid rgba(#A0A287, 0.5);
+    background: rgba(#EAECCC, 0.5);
+  }
+
+  &.bg-return-closed {
+    color: $black;
+    border: 1px solid rgba(#B4547A, 0.5);
+    background: rgba(#FF90BC, 0.5);
+  }
+
+  &.bg-return-on-hold {
+    color: $black;
+    border: 1px solid rgba(#7177A0, 0.5);
+    background: rgba(#ACB1D6, 0.5);
+  }
+
+  &.bg-return-not-accepted {
+    color: $black;
+    border: 1px solid rgba(#FA1E0E, 0.5);
+    background: rgba(#FE574B, 0.5);
+  }
+}
+
+.filter {
+  .badge {
+    font-size: $font-size-sm;
+    line-height: .5rem;
+    padding: .5rem;
+
+    &.bg-filter-danger {
+      color: $danger;
+      border: 1px solid rgba($danger, 0.5);
+      background: $white;
+
+      &:hover {
+        background: rgba($danger-light-color, 0.2);
+      }
+    }
+
+    &.bg-filter-light {
+      color: $black;
+      border: 1px solid $gray-400;
+      background: $white;
+
+      &:hover {
+        background: $gray-100;
+
+        &:hover {
+          [class*='fill-'] {
+            fill: $gray-700;
+          }
+
+          [class*='stroke-'] {
+            path {
+              stroke: $gray-700;
+            }
+          }
+        }
+      }
+    }
+  }
+}

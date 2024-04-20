@@ -1,0 +1,246 @@
+.table-layout-panel {
+  margin-top: 1rem;
+  font-size: $font-size-sm;
+  border: 1px solid $border-color;
+  border-radius: $border-radius-sm;
+
+  // .table-body {
+  // &.scroll {
+  //   max-height: calc(100vh - 400px);
+  //   min-height: 12rem;
+  //   overflow: auto;
+
+  //   &::-webkit-scrollbar {
+  //     display: none;
+  //   }
+  // }
+  // }
+
+  .subtitle {
+    font-weight: $font-weight-semibold;
+  }
+
+  .quick-view-panel {
+    background: tint-color($secondary, 90%);
+    padding: 1.5rem 3rem;
+
+    @include media-breakpoint-down (md) {
+      display: none;
+    }
+  }
+
+  b {
+    font-weight: $font-weight-semibold;
+  }
+
+  .table-head {
+    border-top-left-radius: $border-radius-sm;
+    border-top-right-radius: $border-radius-sm;
+    background: $gray-100;
+    padding: 0 1rem;
+
+    .col-th {
+      font-weight: $font-weight-semibold;
+      border-right: 1px solid $gray-400;
+      padding: 0.75rem;
+
+      &:last-child {
+        border-right: 0;
+      }
+
+      .btn {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        font-size: $font-size-sm;
+        font-weight: $font-weight-semibold;
+        border: 0;
+        background: transparent;
+        padding: 0;
+
+        &.active,
+        &:active,
+        &:hover {
+          color: $primary;
+          background-color: transparent;
+
+          [class*='fill-'] {
+            fill: $black;
+          }
+
+          [class*='stroke-'] {
+            path {
+              stroke: $black;
+            }
+          }
+        }
+      }
+    }
+
+    .icon-hide {
+      display: block;
+
+      .icon {
+        opacity: 0;
+      }
+
+      &:hover {
+        text-decoration: none;
+
+        .icon {
+          opacity: 1;
+          transition: $transition-base;
+        }
+      }
+    }
+
+    @include media-breakpoint-down(md) {
+      display: none;
+    }
+  }
+
+  .table-row {
+    border-top: 1px solid $border-color;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    word-break: break-all;
+
+    &:nth-child(even) {
+      background-color: $gray-100;
+
+      @include media-breakpoint-down(md) {
+        background-color: $white;
+      }
+    }
+
+    &:last-child {
+      border-bottom-left-radius: $border-radius-sm;
+      border-bottom-right-radius: $border-radius-sm;
+
+    }
+
+    @include media-breakpoint-down(md) {
+      white-space: nowrap;
+      overflow: auto;
+
+      &:first-child {
+        border-top: 0;
+      }
+    }
+
+    &:hover {
+      background: rgba($gray-400, .4)
+    }
+
+    .btn-link {
+      padding: 0;
+    }
+
+    .product-image {
+      width: 1.5rem;
+      height: 1.5rem;
+      border-radius: 0.25rem;
+      border: 1px solid $gray-300;
+      margin-right: 0.25rem;
+
+      &.lg {
+        width: 2rem;
+        height: 2rem;
+      }
+    }
+
+    .edit-input {
+      width: 72px;
+
+      input {
+        border: none;
+        box-shadow: none;
+        background: none;
+        padding: 0;
+      }
+    }
+
+    .dropdown {
+      .btn-outline-light {
+        color: $black;
+        border-color: transparent;
+        font-size: $font-size-sm;
+        background: transparent;
+        padding: $dropdown-item-padding-y;
+
+        &:hover {
+          color: $white;
+          background-color: $primary;
+          border-color: $primary;
+
+          [class*='fill-'] {
+            fill: $white;
+          }
+
+          [class*='stroke-'] {
+            path {
+              stroke: $white;
+            }
+          }
+        }
+
+        @include media-breakpoint-down(md) {
+          padding: 0;
+
+          &.active,
+          &:active,
+          &:hover {
+            color: $primary;
+            border-color: transparent;
+            background-color: transparent;
+
+            [class*='fill-'] {
+              fill: $black;
+            }
+
+            [class*='stroke-'] {
+              path {
+                stroke: $black;
+              }
+            }
+          }
+        }
+      }
+
+      .btn {
+        display: flex;
+        align-items: center;
+
+        .text-truncate {
+          display: block;
+          max-width: 3.5rem;
+
+          @include media-breakpoint-up(xl) {
+            max-width: 4rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+.empty-table {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem 0;
+}
+
+.collapse-row-bg {
+  background: tint-color($secondary, 70%);
+
+  @include media-breakpoint-down(md) {
+    background-color: white;
+  }
+}
+
+.price-info {
+  display: flex;
+  align-items: center;
+}
