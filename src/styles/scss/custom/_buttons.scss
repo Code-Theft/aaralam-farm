@@ -93,7 +93,7 @@
     }
   }
 
-  :not(.btn-check)+&:active,
+  :not(.btn-check) + &:active,
   &:first-child:active {
     color: $white;
     border-color: $primary;
@@ -137,11 +137,11 @@
     background-color: $primary;
     border-color: $primary;
 
-    [class*='fill-'] {
+    [class*="fill-"] {
       fill: $white;
     }
 
-    [class*='stroke-'] {
+    [class*="stroke-"] {
       path {
         stroke: $white;
       }
@@ -152,11 +152,11 @@
     color: $white;
     border-color: $primary;
 
-    [class*='fill-'] {
+    [class*="fill-"] {
       fill: $white;
     }
 
-    [class*='stroke-'] {
+    [class*="stroke-"] {
       path {
         stroke: $white;
       }
@@ -168,11 +168,11 @@
     border-color: $gray-300;
     background: $gray-200;
 
-    [class*='fill-'] {
+    [class*="fill-"] {
       fill: $gray-500;
     }
 
-    [class*='stroke-'] {
+    [class*="stroke-"] {
       path {
         stroke: $gray-500;
       }
@@ -185,11 +185,11 @@
     border-color: tint-color($primary, 10%);
     background-color: tint-color($primary, 10%);
 
-    [class*='fill-'] {
+    [class*="fill-"] {
       fill: $white;
     }
 
-    [class*='stroke-'] {
+    [class*="stroke-"] {
       path {
         stroke: $white;
       }
@@ -201,11 +201,11 @@
     border-color: tint-color($primary, 30%);
     background-color: tint-color($primary, 30%);
 
-    [class*='fill-'] {
+    [class*="fill-"] {
       fill: $white;
     }
 
-    [class*='stroke-'] {
+    [class*="stroke-"] {
       path {
         stroke: $white;
       }
@@ -216,11 +216,11 @@
     border-color: tint-color($primary, 30%);
     background-color: tint-color($primary, 30%);
 
-    [class*='fill-'] {
+    [class*="fill-"] {
       fill: $white;
     }
 
-    [class*='stroke-'] {
+    [class*="stroke-"] {
       path {
         stroke: $white;
       }
@@ -241,7 +241,7 @@
 .btn-outline-success {
   background-color: rgba($success-lighter-color, 20%);
 
-  :not(.btn-check)+&:active,
+  :not(.btn-check) + &:active,
   &:first-child:active {
     color: $success;
     border-color: $success;
@@ -253,11 +253,11 @@
     border-color: $success;
     background-color: $success;
 
-    [class*='fill-'] {
+    [class*="fill-"] {
       fill: $white;
     }
 
-    [class*='stroke-'] {
+    [class*="stroke-"] {
       path {
         stroke: $white;
       }
@@ -269,11 +269,11 @@
     border-color: $success;
     background-color: rgba($success-lighter-color, 20%);
 
-    [class*='fill-'] {
+    [class*="fill-"] {
       fill: $success;
     }
 
-    [class*='stroke-'] {
+    [class*="stroke-"] {
       path {
         stroke: $success;
       }
@@ -284,7 +284,7 @@
 .btn-outline-danger {
   background-color: rgba($danger-lighter-color, 20%);
 
-  :not(.btn-check)+&:active,
+  :not(.btn-check) + &:active,
   &:first-child:active {
     color: $danger;
     border-color: $danger;
@@ -296,11 +296,11 @@
     border-color: $danger;
     background-color: $danger;
 
-    [class*='fill-'] {
+    [class*="fill-"] {
       fill: $white;
     }
 
-    [class*='stroke-'] {
+    [class*="stroke-"] {
       path {
         stroke: $white;
       }
@@ -312,11 +312,11 @@
     border-color: $danger;
     background-color: rgba($danger-lighter-color, 20%);
 
-    [class*='fill-'] {
+    [class*="fill-"] {
       fill: $danger;
     }
 
-    [class*='stroke-'] {
+    [class*="stroke-"] {
       path {
         stroke: $danger;
       }
@@ -326,11 +326,11 @@
 
 .btn-outline-base {
   &:hover {
-    [class*='fill-'] {
+    [class*="fill-"] {
       fill: $white;
     }
 
-    [class*='stroke-'] {
+    [class*="stroke-"] {
       path {
         stroke: $white;
       }
@@ -340,11 +340,11 @@
 
 .btn-outline-secondary {
   &:hover {
-    [class*='fill-'] {
+    [class*="fill-"] {
       fill: $white;
     }
 
-    [class*='stroke-'] {
+    [class*="stroke-"] {
       path {
         stroke: $white;
       }
@@ -402,11 +402,11 @@
     border-color: $primary;
     background-color: $primary;
 
-    [class*='fill-'] {
+    [class*="fill-"] {
       fill: $white;
     }
 
-    [class*='stroke-'] {
+    [class*="stroke-"] {
       path {
         stroke: $white;
       }
@@ -417,11 +417,11 @@
     color: $white;
     border-color: $primary;
 
-    [class*='fill-'] {
+    [class*="fill-"] {
       fill: $white;
     }
 
-    [class*='stroke-'] {
+    [class*="stroke-"] {
       path {
         stroke: $white;
       }
@@ -433,11 +433,11 @@
     border-color: $gray-300;
     background: $gray-200;
 
-    [class*='fill-'] {
+    [class*="fill-"] {
       fill: $gray-500;
     }
 
-    [class*='stroke-'] {
+    [class*="stroke-"] {
       path {
         stroke: $gray-500;
       }
@@ -466,11 +466,11 @@
   .btn-outline-light {
     color: $gray-500;
 
-    [class*='fill-'] {
+    [class*="fill-"] {
       fill: $primary;
     }
 
-    [class*='stroke-'] {
+    [class*="stroke-"] {
       path {
         stroke: $primary;
       }
@@ -498,12 +498,12 @@
   border-color: $gray-300;
   background: $gray-200;
 
-  [dir=ltr] & {
+  [dir="ltr"] & {
     padding-left: 1rem;
     padding-right: 2.25rem;
   }
 
-  [dir=rtl] & {
+  [dir="rtl"] & {
     padding-left: 2.25rem;
     padding-right: 1rem;
   }
@@ -518,11 +518,11 @@
     top: 50%;
     transform: translateY(-50%);
 
-    [dir=ltr] & {
+    [dir="ltr"] & {
       right: 1rem;
     }
 
-    [dir=rtl] & {
+    [dir="rtl"] & {
       left: 1rem;
     }
   }
@@ -538,8 +538,8 @@
 
 .dropdown-menu {
   width: 100%;
-  margin-top: .5rem;
-  margin-bottom: .5rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
   overflow-y: auto;
 
   &.search-menu {
@@ -569,11 +569,11 @@
       color: $white;
       background-color: $primary;
 
-      [class*='fill-'] {
+      [class*="fill-"] {
         fill: $white;
       }
 
-      [class*='stroke-'] {
+      [class*="stroke-"] {
         path {
           stroke: $white;
         }
@@ -654,11 +654,11 @@
   &:hover {
     color: tint-color($primary, 20%);
 
-    [class*='fill-'] {
+    [class*="fill-"] {
       fill: tint-color($primary, 20%);
     }
 
-    [class*='stroke-'] {
+    [class*="stroke-"] {
       path {
         stroke: tint-color($primary, 20%);
       }
@@ -721,11 +721,11 @@
         background: $info-light-color;
       }
 
-      [class*='fill-'] {
+      [class*="fill-"] {
         fill: $white;
       }
 
-      [class*='stroke-'] {
+      [class*="stroke-"] {
         path {
           stroke: $white;
         }
@@ -752,11 +752,11 @@
     &:hover {
       color: tint-color($secondary, 20%);
 
-      [class*='fill-'] {
+      [class*="fill-"] {
         fill: tint-color($secondary, 20%);
       }
 
-      [class*='stroke-'] {
+      [class*="stroke-"] {
         path {
           stroke: tint-color($secondary, 20%);
         }
@@ -778,11 +778,11 @@
     color: $white;
     background-color: $primary;
 
-    [class*='fill-'] {
+    [class*="fill-"] {
       fill: $white;
     }
 
-    [class*='stroke-'] {
+    [class*="stroke-"] {
       path {
         stroke: $white;
       }
@@ -801,7 +801,7 @@
     border-radius: $btn-border-radius;
   }
 
-  :not(.btn-check)+&:active,
+  :not(.btn-check) + &:active,
   &:first-child:active {
     border-color: $white;
     background-color: $primary;
@@ -815,11 +815,11 @@
 
   &:focus,
   &:active {
-    [class*='fill-'] {
+    [class*="fill-"] {
       fill: $white;
     }
 
-    [class*='stroke-'] {
+    [class*="stroke-"] {
       path {
         stroke: $white;
       }
@@ -831,11 +831,11 @@
     border-color: $gray-300;
     box-shadow: none;
 
-    [class*='fill-'] {
+    [class*="fill-"] {
       fill: $gray-500;
     }
 
-    [class*='stroke-'] {
+    [class*="stroke-"] {
       path {
         stroke: $gray-500;
       }
