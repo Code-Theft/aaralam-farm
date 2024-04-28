@@ -14,18 +14,18 @@ export default function IconSeeMore() {
         cy="18"
         r="13.125"
         stroke="#1E1E1E"
-        stroke-opacity="0.5"
-        stroke-width="2.91667"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeOpacity="0.5"
+        strokeWidth="2.91667"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M17.7501 22.375L22.1251 18M22.1251 18L17.7501 13.625M22.1251 18H13.3751"
         stroke="#1E1E1E"
-        stroke-opacity="0.5"
-        stroke-width="2.91667"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeOpacity="0.5"
+        strokeWidth="2.91667"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
     </svg>
   );
