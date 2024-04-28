@@ -41,7 +41,7 @@ $grays: (
 // scss-docs-start color-variables
 $primary-color: #000000 !default;
 $secondary-color: #36ae55 !default;
-$tertiary-color: #0dc8de !default;
+$tertiary-color: #f1efe4 !default;
 $quad-color: #188d68 !default;
 $gray-color: #188d68 !default;
 $base-color: #000 !default;
@@ -504,7 +504,7 @@ $grid-breakpoints: (
   md: 768px,
   lg: 1024px,
   xl: 1440px,
-  xxl: 1728px //1664 + 32x2,,,,,
+  xxl: 1728px //1664 + 32x2,,,,,,
 ) !default;
 // scss-docs-end grid-breakpoints
 
