@@ -1,5 +1,5 @@
-.product-listing {
-  background-color: $tertiary-color;
+.plant-listing {
+  background-color: $gray-100;
 
   .listing-wrap {
     padding: 2rem 2.5rem;
@@ -42,7 +42,7 @@
         justify-content: center;
 
         .card-wrap {
-          background-color: $gray-100;
+          background-color: $tertiary-color;
           border-radius: 0.5rem;
 
           .card-desp {

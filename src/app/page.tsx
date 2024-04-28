@@ -11,6 +11,7 @@ import React from "react";
 import Footer from "@widgets/Footer";
 import Feature from "@widgets/Feature";
 import ProductList from "@widgets/ProductListing";
+import PlantsList from "@widgets/PlantsListing/view";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <div>Aralam Farm</div>
       <Feature />
       <ProductList />
+      <PlantsList />
       {/* <Footer /> */}
     </>
   );

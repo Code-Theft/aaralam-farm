@@ -19,8 +19,8 @@ export default function ListCards({ data }: { data: ListCardsProps }) {
               src={data?.imgUrl}
               className="card-img-top"
               alt={data?.product}
-              height={310}
-              width={300}
+              height={260}
+              width={250}
             />
           </div>
         </div>
