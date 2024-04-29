@@ -28,7 +28,7 @@
     width: 8px;
     height: 8px;
   }
-  
+
   &.fill-primary {
     fill: $primary;
 
@@ -86,7 +86,7 @@
       fill: $success;
     }
   }
-  
+
   &.fill-danger {
     fill: $danger;
 
@@ -94,7 +94,7 @@
       fill: $danger;
     }
   }
-  
+
   &.fill-warning {
     fill: $warning;
 
@@ -102,7 +102,7 @@
       fill: $warning;
     }
   }
-  
+
   &.fill-info {
     fill: $info;
 
@@ -110,7 +110,7 @@
       fill: $info;
     }
   }
-  
+
   &.fill-muted {
     fill: $text-muted;
 
@@ -118,7 +118,7 @@
       fill: $text-muted;
     }
   }
-  
+
   &.fill-black {
     fill: $black;
 
@@ -126,15 +126,15 @@
       fill: $black;
     }
   }
-  
+
   &.fill-white {
     fill: $white;
-    
+
     .fill {
       fill: $white;
     }
   }
-  
+
   &.stroke-primary {
     path {
       stroke: $primary;
@@ -204,7 +204,7 @@
       stroke: $success;
     }
   }
-  
+
   &.stroke-danger {
     path {
       stroke: $danger;
@@ -214,7 +214,7 @@
       stroke: $danger;
     }
   }
-  
+
   &.stroke-warning {
     path {
       stroke: $warning;
@@ -224,7 +224,7 @@
       stroke: $warning;
     }
   }
-  
+
   &.stroke-info {
     path {
       stroke: $info;
@@ -234,7 +234,7 @@
       stroke: $info;
     }
   }
-  
+
   &.stroke-muted {
     path {
       stroke: $text-muted;
@@ -244,7 +244,7 @@
       stroke: $text-muted;
     }
   }
-  
+
   &.stroke-black {
     path {
       stroke: $black;
@@ -254,7 +254,7 @@
       stroke: $black;
     }
   }
-  
+
   &.stroke-white {
     path {
       stroke: $white;
@@ -291,7 +291,7 @@
     width: 0.75rem;
     height: 0.75rem;
   }
-  
+
   &.primary {
     background: $primary;
   }
@@ -325,16 +325,16 @@
     width: 0.75rem;
     height: 0.75rem;
   }
-  
+
   &.primary {
     border: 1px solid $primary;
   }
-  
+
   &.secondary {
     border: $secondary;
   }
 
   &.light {
-    border:1px solid $gray-400;
+    border: 1px solid $gray-400;
   }
 }

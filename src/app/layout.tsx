@@ -11,6 +11,7 @@ import React from "react";
 import type { Metadata } from "next";
 import { Children } from "@lib/types";
 import "@styles/scss/main.scss";
+import Header from "@widgets/Header";
 
 export const metadata: Metadata = {
   title: "Aralam Farm",
@@ -21,7 +22,10 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: Children) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <Header />
+        {children}
+      </body>
     </html>
   );
 }
