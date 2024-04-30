@@ -12,11 +12,12 @@ import Footer from "@widgets/Footer";
 import Feature from "@widgets/Feature";
 import ProductList from "@widgets/ProductListing";
 import PlantsList from "@widgets/PlantsListing/view";
+import LandingPage from "@widgets/LandingPage";
 
 export default function Home() {
   return (
     <>
-      <div>Aralam Farm</div>
+      <LandingPage />
       <Feature />
       <ProductList />
       <PlantsList />

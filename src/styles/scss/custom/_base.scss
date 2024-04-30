@@ -5,9 +5,9 @@ body {
   padding-top: $header-height;
   font-family: $theme-font;
 
-  @include media-breakpoint-down(md) {
-    padding-top: 4.5rem;
-  }
+  // @include media-breakpoint-down(md) {
+  //   padding-top: 2rem;
+  // }
 }
 
 ::-webkit-scrollbar {
