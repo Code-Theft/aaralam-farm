@@ -2,25 +2,21 @@
 
 .home {
   position: relative;
-  display: flex;
   height: 100vh;
+  display: flex;
   align-items: center;
+  color: $white;
+  justify-content: space-between;
   background-repeat: no-repeat;
   background-size: cover;
   background-image: url("/images/home.jpg") !important;
 
   .home-wrap {
-    display: flex;
-    width: 100%;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 5rem;
-    color: $white;
-    border: 1px solid blue;
+    padding-left: 1rem;
+    max-width: 600px;
 
-    div {
-      border: 1px solid red;
+    @media (min-width: map-get($grid-breakpoints, md)) {
+      padding: 2.5rem;
     }
 
     h2 {
@@ -37,6 +33,23 @@
     p {
       font-size: 1rem;
       margin-top: 1rem;
+      max-width: 600px;
+    }
+  }
+
+  .home-slide {
+    display: flex;
+    justify-content: flex-end;
+
+    .slide-wrap {
+      display: flex;
+      max-width: 360px;
+      justify-content: flex-end;
+      border: 1px solid red;
+
+      .cont {
+        border: 1px solid green;
+      }
     }
   }
 }

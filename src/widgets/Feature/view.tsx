@@ -8,6 +8,7 @@
  */
 
 import React from "react";
+import Image from "@components/Image";
 import Button from "@components/Button";
 import IconLeaf from "@icons/IconLeaf";
 import IconLoc from "@icons/IconLoc";
@@ -41,7 +42,15 @@ export default function FeatureView() {
     <div className="feature">
       <div className="feature-wrap">
         <div className="row">
-          <div className="col-12 col-md-6 border border-primary">1</div>
+          <div className="col-12 col-md-6 d-none d-md-block">
+            <Image
+              src="/images/aralam-wildlife.jpg"
+              alt="fsd"
+              width="800"
+              height="320"
+              className="img-fluid"
+            />
+          </div>
           <div className="col-12 col-md-6">
             <div>
               <h1 className="feature-head">
