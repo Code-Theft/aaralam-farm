@@ -40,16 +40,12 @@
   .home-slide {
     display: flex;
     justify-content: flex-end;
+    overflow: hidden;
 
     .slide-wrap {
       display: flex;
-      max-width: 360px;
+      max-width: 860px;
       justify-content: flex-end;
-      border: 1px solid red;
-
-      .cont {
-        border: 1px solid green;
-      }
     }
   }
 }

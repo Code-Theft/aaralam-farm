@@ -1,4 +1,5 @@
 import React from "react";
+import SwiperCards from "./components/SwiperCards";
 
 export default function LandingPageView() {
   return (
@@ -14,11 +15,9 @@ export default function LandingPageView() {
           </p>
         </div>
       </div>
-      <div className="col-12 col-md-6 d-none d-md-flex border border-warning home-slide">
+      <div className="col-12 col-md-6 d-none d-md-flex home-slide">
         <div className="slide-wrap ">
-          <div className="cont">Image</div>
-
-          <div className="cont">Image</div>
+          <SwiperCards />
         </div>
       </div>
     </div>
