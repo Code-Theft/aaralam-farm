@@ -1,5 +1,6 @@
 import React from "react";
 import ListCards from "@widgets/ProductListing/components/ListCards";
+import Button from "@components/Button";
 
 const storeData = [
   {
@@ -48,6 +49,9 @@ export default function ProductListview() {
               <ListCards data={item} key={`key_${index + 1}`} />
             ))}
           </div>
+        </div>
+        <div className="see-more">
+          <Button className="btn" isdisabled={false} value="See More >>" />
         </div>
       </div>
     </div>
