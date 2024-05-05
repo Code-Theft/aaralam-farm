@@ -6,37 +6,37 @@ const storeData = [
     product: "Cashew",
     productDetails: "King of Cashews",
     imgUrl: "/images/assets/cashew.png",
-    pdpUrl: "/products/cahews",
+    pdpUrl: "/plants/cahews",
   },
   {
     product: "Honey",
     productDetails: "Sage Honey",
     imgUrl: "/images/assets/honey.png",
-    pdpUrl: "/products/honey",
+    pdpUrl: "/plants/honey",
   },
   {
     product: "Pepper",
     productDetails: "Pepper Nigrum",
     imgUrl: "/images/assets/pepper.png",
-    pdpUrl: "/products/pepper",
+    pdpUrl: "/plants/pepper",
   },
   {
     product: "Coconut Tree",
     productDetails: "Kalpasree",
     imgUrl: "/images/assets/coconut.png",
-    pdpUrl: "/products/coconut",
+    pdpUrl: "/plants/coconut",
   },
   {
     product: "Banana Tree",
     productDetails: "Grand Naine",
     imgUrl: "/images/assets/banana.png",
-    pdpUrl: "/products/banana",
+    pdpUrl: "/plants/banana",
   },
   {
     product: "Cashew",
     productDetails: "King of Cashews",
     imgUrl: "/images/assets/cashew.png",
-    pdpUrl: "/products/cahews",
+    pdpUrl: "/plants/cahews",
   },
   {
     product: "Honey",
@@ -64,13 +64,13 @@ const storeData = [
   },
 ];
 
-export default function FarmProductsView() {
+export default function FarmPantsView() {
   return (
     <div className="plant-listing">
       <div className="listing-wrap">
         <div className="product-head">
-          <h1>Farm Products</h1>
-          <p>Find the list of items available in Our Stores.</p>
+          <h1>Farm Plants</h1>
+          <p>Find the list of plants available in Our Stores.</p>
         </div>
         <div className="product-lists">
           <div className="row">

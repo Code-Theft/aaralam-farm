@@ -1,37 +1,38 @@
 import React from "react";
 import ListCards from "@components/ListCards";
 import Button from "@components/Button";
+import Link from "@components/Link";
 
 const plantData = [
   {
     product: "Cashew",
     productDetails: "King of Cashews",
     imgUrl: "/images/assets/cashew.png",
-    pdpUrl: "/products/cahews",
+    pdpUrl: "/plants/cahews",
   },
   {
     product: "Honey",
     productDetails: "Sage Honey",
     imgUrl: "/images/assets/honey.png",
-    pdpUrl: "/products/honey",
+    pdpUrl: "/plants/honey",
   },
   {
     product: "Pepper",
     productDetails: "Pepper Nigrum",
     imgUrl: "/images/assets/pepper.png",
-    pdpUrl: "/products/pepper",
+    pdpUrl: "/plants/pepper",
   },
   {
     product: "Coconut Tree",
     productDetails: "Kalpasree",
     imgUrl: "/images/assets/coconut.png",
-    pdpUrl: "/products/coconut",
+    pdpUrl: "/plants/coconut",
   },
   {
     product: "Banana Tree",
     productDetails: "Grand Naine",
     imgUrl: "/images/assets/banana.png",
-    pdpUrl: "/products/banana",
+    pdpUrl: "/plants/banana",
   },
 ];
 
@@ -51,7 +52,9 @@ export default function PlantsListview() {
           </div>
         </div>
         <div className="see-more">
-          <Button className="btn" isdisabled={false} value="See More >>" />
+          <Link href="/plants">
+            <Button className="btn" isdisabled={false} value="See More >>" />
+          </Link>
         </div>
       </div>
     </div>
