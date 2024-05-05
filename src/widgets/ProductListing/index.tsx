@@ -1,2 +1,2 @@
-import ProductListview from "@widgets/ProductListing/view";
-export default ProductListview;
+import ProductList from "@widgets/ProductListing/view";
+export default ProductList;

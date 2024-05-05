@@ -1,5 +1,5 @@
 import React from "react";
-import ListCards from "@widgets/ProductListing/components/ListCards";
+import ListCards from "@components/ListCards";
 import Button from "@components/Button";
 
 const plantData = [
