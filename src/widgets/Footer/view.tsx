@@ -7,10 +7,10 @@
  * @author Janajith D
  */
 
+import React from "react";
 import Link from "@components/Link";
 import Image from "@components/Image";
 import { imageAlts } from "@utils/constants";
-import React from "react";
 
 const Footer = () => {
   return (
