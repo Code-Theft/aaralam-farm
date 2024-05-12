@@ -1,5 +1,5 @@
 import React from "react";
-import SwiperCards from "./components/SwiperCards";
+import SwiperCards from "@widgets/LandingPage/components/SwiperCards";
 
 export default function LandingPageView() {
   return (
