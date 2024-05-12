@@ -56,5 +56,20 @@
         }
       }
     }
+
+    .see-more {
+      margin-top: 2rem;
+
+      .btn {
+        border: 1px solid $gray-900;
+        color: $gray-900;
+        font-size: 1rem;
+
+        &:hover {
+          color: $gray-100;
+          background-color: $gray-900;
+        }
+      }
+    }
   }
 }
