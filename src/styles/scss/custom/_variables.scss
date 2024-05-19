@@ -576,6 +576,14 @@ $box-shadow-inset: inset 0 1px 2px rgba(var(--#{$prefix}body-color-rgb), 0.075) 
 $component-active-color: $white !default;
 $component-active-bg: $primary !default;
 
+// scss-docs-start focus-ring-variables
+$focus-ring-width: 0 !default;
+$focus-ring-opacity: 0.25 !default;
+$focus-ring-color: rgba($primary, $focus-ring-opacity) !default;
+$focus-ring-blur: 0 !default;
+$focus-ring-box-shadow: none !default;
+// scss-docs-end focus-ring-variables
+
 // scss-docs-start caret-variables
 $caret-width: 0.3em !default;
 $caret-vertical-align: $caret-width * 0.85 !default;
@@ -1174,29 +1182,34 @@ $zindex-levels: (
 // Navs
 
 // scss-docs-start nav-variables
-$nav-link-padding-y: 0.5rem !default;
+$nav-link-padding-y: 1.5rem !default;
 $nav-link-padding-x: 1rem !default;
-$nav-link-font-size: $font-size-base !default;
-$nav-link-font-weight: $font-weight-medium !default;
-$nav-link-color: $black !default;
-$nav-link-hover-color: $primary !default;
+$nav-link-font-size: null !default;
+$nav-link-font-weight: null !default;
+$nav-link-color: var(--#{$prefix}link-color) !default;
+$nav-link-hover-color: var(--#{$prefix}link-hover-color) !default;
 $nav-link-transition: color 0.15s ease-in-out,
   background-color 0.15s ease-in-out, border-color 0.15s ease-in-out !default;
 $nav-link-disabled-color: var(--#{$prefix}secondary-color) !default;
+$nav-link-focus-box-shadow: $focus-ring-box-shadow !default;
 
-$nav-tabs-border-color: var(--#{$prefix}border-color) !default;
-$nav-tabs-border-width: 0 !default;
-$nav-tabs-border-radius: var(--#{$prefix}border-radius-sm) !default;
+$nav-tabs-border-color: var(--#{$prefix}gray-300) !default;
+$nav-tabs-border-width: var(--#{$prefix}0) !default;
+$nav-tabs-border-radius: var(--#{$prefix}0) !default;
 $nav-tabs-link-hover-border-color: var(--#{$prefix}secondary-bg)
   var(--#{$prefix}secondary-bg) $nav-tabs-border-color !default;
-$nav-tabs-link-active-color: var(--#{$prefix}primary) !default;
-$nav-tabs-link-active-bg: var(--#{$prefix}body-bg) !default;
+$nav-tabs-link-active-color: var(--#{$prefix}white) !default;
+$nav-tabs-link-active-bg: var(--#{$prefix}black) !default;
 $nav-tabs-link-active-border-color: var(--#{$prefix}border-color)
   var(--#{$prefix}border-color) $nav-tabs-link-active-bg !default;
 
-$nav-pills-border-radius: $border-radius !default;
+$nav-pills-border-radius: var(--#{$prefix}border-radius) !default;
 $nav-pills-link-active-color: $component-active-color !default;
 $nav-pills-link-active-bg: $component-active-bg !default;
+
+$nav-underline-gap: 1rem !default;
+$nav-underline-border-width: 0.125rem !default;
+$nav-underline-link-active-color: var(--#{$prefix}emphasis-color) !default;
 // scss-docs-end nav-variables
 
 // Navbar
