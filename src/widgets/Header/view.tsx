@@ -19,7 +19,7 @@ export default function HeaderView() {
       {
         id: navbarLinks.ABOUT,
         path: "/about",
-        label: "Home",
+        label: "About",
       },
       {
         id: navbarLinks.PRODUCTS,
