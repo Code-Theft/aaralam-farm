@@ -1,0 +1,17 @@
+.swiper {
+  margin: 0;
+  padding: 0;
+
+  .swiper-cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .swiper-title {
+      color: $white;
+      margin-top: 1rem;
+      font-size: 0.75rem;
+    }
+  }
+}

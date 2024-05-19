@@ -1,20 +1,14 @@
+@import "bootstrap-5.3/functions";
+@import "bootstrap-5.3/bootstrap.scss";
 @import "custom/variables";
+
+@import "custom/feature";
+@import "custom/buttons";
+@import "custom/base";
+@import "custom/product-listing";
+@import "custom/plant-listing";
+@import "custom/header";
+@import "custom/icons";
+@import "custom/home";
+@import "custom/swiper";
 @import "custom/footer";
-
-body {
-  padding: 0;
-  margin: 0;
-  font-family: $font-family;
-  width: 100vw;
-}
-
-// Common for all Next/Links
-.next-links {
-  text-decoration: none;
-  color: $white;
-
-  &:hover {
-    color: $primary-color;
-    transition: 0.3s ease-in-out;
-  }
-}

@@ -1,0 +1,10 @@
+.not-found-panel {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+
+  @include media-breakpoint-up(md) {
+    margin-top: calc(0px - $header-height);
+  }
+}
