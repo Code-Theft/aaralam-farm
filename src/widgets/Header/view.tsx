@@ -3,8 +3,8 @@
 import React, { useMemo } from "react";
 import Link from "@components/Link";
 import AralamLogo from "@core/AralamLogo";
-import IconChevronDown from "@icons/IconChevronDown";
 import { usePathname } from "next/navigation";
+import IconChevronDown from "@icons/IconChevronDown";
 import { navbarLinks, pageRoutes } from "@utils/constants";
 
 export default function HeaderView() {
@@ -14,6 +14,11 @@ export default function HeaderView() {
       {
         id: navbarLinks.HOME,
         path: "/",
+        label: "Home",
+      },
+      {
+        id: navbarLinks.ABOUT,
+        path: "/about",
         label: "Home",
       },
       {
