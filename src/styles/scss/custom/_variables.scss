@@ -618,8 +618,9 @@ $font-size-root: null !default;
 $font-size-base: 0.875rem !default; // Assumes the browser default, typically `16px`
 $font-size-xs: 0.625rem !default;
 $font-size-sm: 0.75rem !default;
-$font-size-lg: 1rem !default;
-$font-size-xl: 1.125rem !default;
+$font-size-md: 1rem !default;
+$font-size-lg: 1.125rem !default;
+$font-size-xl: 1.25rem !default;
 
 $font-weight-lighter: lighter !default;
 $font-weight-light: 300 !default;
