@@ -38,13 +38,22 @@ header {
           text-decoration: none;
           color: $primary-color;
 
+          &.active {
+            border-bottom: 2px solid $gray-900;
+            a {
+              font-weight: $font-weight-semibold;
+            }
+          }
+
+          &:hover {
+            border-bottom: 2px solid $gray-900;
+            transition: border-bottom 0.3s ease-in;
+          }
+
           a {
             text-decoration: none !important;
             font-weight: $font-weight-normal;
-
-            &:active {
-              border-bottom: 1px solid red;
-            }
+            padding-bottom: 0.5rem;
           }
         }
       }
