@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { Children } from "@lib/types";
 import "@styles/scss/main.scss";
 import Header from "@widgets/Header";
+import Footer from "@widgets/Footer";
 
 export const metadata: Metadata = {
   title: "Aralam Farm",
@@ -16,6 +17,7 @@ export default function RootLayout({ children }: Children) {
       <body>
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );

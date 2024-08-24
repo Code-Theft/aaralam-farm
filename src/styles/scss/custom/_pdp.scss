@@ -1,0 +1,85 @@
+// SOme more CSS
+
+.product-information {
+  .info-details {
+    position: relative;
+    background: $gray;
+  }
+
+  .info-content-panel {
+    .title {
+      font-size: $font-size-lg;
+
+      @include media-breakpoint-down(md) {
+        font-size: $font-size-md;
+      }
+    }
+
+    .content {
+      margin: 5rem 0;
+
+      @include media-breakpoint-down(xl) {
+        margin: 3rem 0;
+      }
+
+      @include media-breakpoint-down(lg) {
+        margin: 2rem;
+      }
+    }
+
+    .text {
+      line-height: 20px;
+    }
+
+    .icon-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 5.5rem;
+
+      @include media-breakpoint-down(xl) {
+        margin-bottom: 2.5rem;
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .info-image-panel {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100%;
+    overflow: hidden;
+
+    @include media-breakpoint-down(lg) {
+      margin: 0 -1.5rem;
+    }
+
+    @include media-breakpoint-down(md) {
+      margin: 0 -1rem;
+    }
+
+    .info-image {
+      @include media-breakpoint-down(xxl) {
+        margin-right: -1.5rem;
+      }
+
+      @include media-breakpoint-down(lg) {
+        width: 100%;
+        margin-right: 0;
+      }
+
+      img {
+        max-width: 100%;
+        height: auto;
+        filter: invert(2%);
+
+        @include media-breakpoint-down(lg) {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

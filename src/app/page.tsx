@@ -1,5 +1,4 @@
 import React from "react";
-import Footer from "@widgets/Footer";
 import Feature from "@widgets/Feature";
 import LandingPage from "@widgets/LandingPage";
 import ProductList from "@widgets/ProductListing";
@@ -12,7 +11,7 @@ export default function Home() {
       <Feature />
       <ProductList />
       <PlantsList />
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }
