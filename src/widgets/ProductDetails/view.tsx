@@ -10,11 +10,9 @@ export default function ProductDetailsView() {
             <div className="col-lg-12">
               <div className="row gx-xl-0">
                 <div className="col-12 col-md-6 col-lg-7">
-                  Changes
-                  {/* <PdpImage /> */}
+                  {/* <PdpImageSlider /> */}
                 </div>
                 <div className="col-12 col-md-6 col-lg-5">
-                  changes
                   {/* <PdpDetails /> */}
                 </div>
               </div>
@@ -23,13 +21,9 @@ export default function ProductDetailsView() {
         </div>
       </div>
       <div className="product-information">
-        <div>
-          <InfoDetails />
-        </div>
-        <div className="d-lg-none">{/* <ProductInfoAccordion /> */}</div>
+        <InfoDetails />
       </div>
-      {/* <RecommendedProducts title="You Might Like These" />
-      <PdpPromotions /> */}
+      {/* <RecommendedProducts title="You Might Like These" />*/}
     </div>
   );
 }

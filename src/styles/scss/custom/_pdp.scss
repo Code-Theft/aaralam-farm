@@ -16,14 +16,14 @@
     }
 
     .content {
-      margin: 124px 0;
+      margin: 5rem 0;
 
       @include media-breakpoint-down(xl) {
         margin: 3rem 0;
       }
 
       @include media-breakpoint-down(lg) {
-        margin: 0;
+        margin: 2rem;
       }
     }
 
@@ -80,44 +80,6 @@
           width: 100%;
         }
       }
-    }
-  }
-
-  .info-tabs-pill {
-    position: relative;
-    padding-top: 3.5rem;
-    z-index: 2;
-
-    @include media-breakpoint-down(lg) {
-      padding-top: 2rem;
-    }
-
-    @include media-breakpoint-down(md) {
-      padding-top: 0.25rem;
-    }
-
-    .nav-item {
-      @include media-breakpoint-down(md) {
-        width: 50%;
-      }
-
-      .nav-link {
-        @include media-breakpoint-down(md) {
-          width: 100%;
-        }
-      }
-    }
-  }
-
-  .accordion {
-    border-bottom: 1px solid $accordion-border-color;
-
-    .accordion-button {
-      background: $gray;
-    }
-
-    .accordion-body {
-      background: $gray;
     }
   }
 }
